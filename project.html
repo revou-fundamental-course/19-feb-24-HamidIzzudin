@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project RevoU</title>
+</head>
+<body>
+
+    <!-- navigasi -->
+    <header class="navbar-container">
+        <div class="logo">
+            <div class="circle-image" style="background-image: url(Asset/Logo-RevoU-5.png);"></div>
+        </div>
+       <nav class="nav-list">
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Profile</a></li>
+            <li><a href="">Portofolio</a></li>
+            <li><a href="">Message Us</a></li>
+       </nav>
+    </header>
+
+
+
+    <!-- isi tengah -->
+    <main>
+        <div class="welcome">
+            <p><h2>Hi <span id="name">Harfi</span>, Welcome To My Website</h2></p>
+            <p><h4>ini adalah website latihan pertama</h4></p>
+            <button id="tombol">Ganti Nama</button>
+        </div>
+        <div>
+            <img class="img-slideshow" src="Asset/slide1.jpg" alt="">
+            <img class="img-slideshow" src="Asset/slide2.jpg" alt="">
+            <img class="img-slideshow" src="Asset/slide3.jpg" alt="">
+            <img class="img-slideshow" src="Asset/slide4.jpg" alt="">
+            <img class="img-slideshow" src="Asset/slide5.jpg" alt="">
+            <img class="img-slideshow" src="Asset/slide6.jpg" alt="">
+            <img class="img-slideshow" src="Asset/slide7.jpg" alt="">
+        </div>
+        <div class="button-gambar">
+            <button class="previous" onclick="plusDivs(-1)">previous</button>
+            <button class="next" onclick="plusDivs(1)">next</button>
+        </div>
+       
+    </main>
+    
+
+
+
+
+    <!-- isi gambar Headquater -->
+    <div class="Our-Headquarter">
+        <p><h2>Our Headquater</h2></p>
+        <div class="our-office">
+            <div class="circle-image" style="background-image: url(Asset/Icon3.jpg);"></div>
+            <div class="circle-image" style="background-image: url(Asset/Icon5.jpg);"></div>
+            <div class="circle-image" style="background-image: url(Asset/AFPSg2j.jpg);"></div>
+        </div>
+        <div class="nama-kota">
+            <p>Jakarta</p>
+            <p>Solo</p>
+            <p>Yogyakarta</p>
+        </div>
+    </div>
+   
+
+
+    <!-- label -->
+    <div class="inqury-box">
+        <form action="" name="message-form" class="inqury-form" onsubmit="return validateForm">
+           <h1>Message US</h1>
+           <table>
+               <tr>
+                    <td>Nama</td>
+                      <td>:</td>
+                      <td><input type="text" id="nama-form" size="50"></td>
+                      <p id="error-name"></p>
+               </tr>
+               
+               <tr>
+                    <td>Tanggal Lahir</td>
+                      <td>:</td>
+                      <td><input type="date" id="date"></ td>
+               </tr>
+               
+               <tr>
+                    <td>Jenis Kelamin</td>
+                      <td>:</td>
+                       <td>
+                        <input type="radio" name="gender" value="Laki-laki" checked>
+                        <label for="">Laki-laki</label>
+                        <input type="radio" name="gender" value="Perempuan">
+                        <label for="">Perempuan</label>
+                        </td>
+                    </td>
+               </tr>
+
+               <tr>
+                    <td>Pesan</td>
+                      <td>:</td>
+                      <td><textarea rows="5" cols="50" placeholder="Pesan"></textarea></td>
+               </tr>
+           </table>
+           <button id="submit" type="submit">Submit</button>
+        </form>
+
+        <div class="isianNama">
+            <p><b>Current time</b> :Fi Jun 17 2022 11:27:28 GMT+0100</p>
+            <p><b>Nama</b> : <span id="isian-form">HAMID IZZUDIN AL FITROH</span></p>
+            <p><b>Tanggal Lahir</b> : 13/11/2004</p>
+            <p><b>Jenis Kelamin</b> : Laki-laki</p>
+            <p><b>Pesan</b> : Lagi Belajar buat Website</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2024, Hamid Izzudin Al Fitroh</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
